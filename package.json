@@ -1,0 +1,39 @@
+{
+  "name": "quan-ly-phong-tro",
+  "version": "1.0.0",
+  "description": "Phần mềm quản lý phòng trọ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "GauGau",
+  "license": "MIT",
+  "build": {
+    "appId": "com.gaugau.quanlyphongtro",
+    "productName": "Quản Lý Phòng Trọ",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "extraResources": [
+      {
+        "from": "resources/",
+        "to": "resources/"
+      }
+    ]
+  },
+  "devDependencies": {
+    "electron": "^41.1.1",
+    "electron-builder": "^26.8.1"
+  },
+  "dependencies": {
+    "docx": "^9.6.1",
+    "docxtemplater": "^3.68.3",
+    "exceljs": "^4.4.0",
+    "html2canvas": "^1.4.1",
+    "pizzip": "^3.2.0",
+    "sqlite3": "^6.0.1"
+  }
+}

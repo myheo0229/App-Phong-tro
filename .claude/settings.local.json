@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node create-template.js)",
+      "Bash(npm install docx --save)",
+      "Bash(npm install html2canvas)"
+    ]
+  }
+}
